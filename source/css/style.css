@@ -1,0 +1,177 @@
+body {
+    font-family: arial, sans-serif;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+}
+.menu {
+    float: left;
+    padding-left: 432px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;     
+}
+.title__container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.title__container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.title__container h4 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #828995;
+}
+.title__container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 50px 14px 0px 14px;
+}
+.about_me {
+    text-align: center;
+    width: 100%;
+    height: 720px;
+    font-size: 17px;
+    margin-top: 110px;
+    background: url(../img/bg2.png) center/cover no-repeat;
+    color: #787f8b;
+}
+.about_me h2 {
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #263244;
+}
+.about_me img {
+    margin:35px;
+}
+.about_me input {
+   height: 40px;
+    text-align: center;
+    border: 2px solid #787f8b;
+    background: none;
+    border-radius: 5px;
+    color: #787f8b;
+    font-size: 16px;
+    padding: 0px 16px;
+    margin: 50px 14px 0px 14px;  
+}
+.what_can_i_do {
+    width: 100%;
+    height: 525px;
+    background: url(../img/bg3.png) center/cover no-repeat;
+    float: left;
+    text-align: center;
+}
+.what_can_i_do h2 {
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #263244;
+     margin-top: 110px;
+}
+.what_can_i_do li{
+    float: left;
+    line-height: 60px;
+    color: #787f8b;
+    margin-right: 40px;
+    font-size: 16px;
+}
+.what_can_i_do h4{
+    color: #cf7600;
+    font-weight: bold;
+}
+.cases {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url(../img/bg2.png) center/cover no-repeat;
+}
+.cases h2 {
+    font-size: 33px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: #263244;
+}
+.value_ {
+    width: 100%;
+    height: 920px;
+    background: url(../img/bg2.png) center/cover no-repeat;
+    text-align: center;
+}
+.value_ h2{
+    font-size: 33px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: #263244; 
+}
+.statistics {
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    background: url(../img/bg4.png) center/cover no-repeat;
+}
+.statistics h2{
+     font-size: 33px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: #263244;
+}
+.reviews {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.reviews h2 {
+   font-size: 33px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: #263244; 
+}
+.contacts {
+    text-align: center;
+    width: 100%;
+    height: 810px;
+    background: url(../img/bg5.png) center/cover no-repeat;
+    color: white;
+
+}
+.contacts h2 {
+    font-size: 33px;
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+.map {
+   width: 100%;
+    height: 350px;
+    background: url(../img/map.png) center/cover no-repeat;
+}

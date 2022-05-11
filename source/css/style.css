@@ -120,6 +120,7 @@ float: left;
     font-size: 16px;
     max-width: 210px;
     padding-top: 100px;
+    line-height: 20px;
     
 }
 .what_can_i_do h4{
@@ -137,6 +138,7 @@ float: left;
     text-align: center;
     background: url(../img/bg2.png) center/cover no-repeat;
     font-size: 16px;
+    color: #263244;
 }
 .cases h2 {
     font-size: 33px;
@@ -180,20 +182,25 @@ float: left;
     font-size: 25px;
     font-weight: bold;
     line-height: 40px;
-    padding-top: 30px;
-    
+    padding-top: 30px;   
 }
+.project_name p{
+  line-height: 26px;  
+}
+ 
 .value_ {
     width: 100%;
     height: 920px;
     background: url(../img/bg2.png) center/cover no-repeat;
     margin-top: 200px;
     text-align: center;
+    color: #263244;
 }
 .value_ h2{
     font-size: 45px;
     font-weight: bold; 
     text-transform: uppercase;
+    font-weight: bold;
     color: #263244; 
     padding-bottom: 75px;
 }
@@ -212,19 +219,30 @@ margin-left: 500px;
     text-align: left;
     margin-top: 20px;
     margin-bottom: 50px;
+    color: #263244;
     background-color: #eeeeee;
 }
-.value_ form input {
-font-size: 29px;  
-background-color: #eeeeee;
-width: 170px;
-    height: 40px;
+.zero {
+    font-size: 20px;
+    font-weight: bold;
+    color: #263244;
+    max-width: 887px;
+    text-align: right;
+    margin-left: 500px;
+    line-height: 36px;
+    margin-top: -10px;
+}
+.zero h3{
+       display: inline;
+    float: left;
+    font-weight: bold;
 }
 .statistics {
     text-align: center;
     height: 500px;
     width: 100%;
     background: url(../img/bg4.png) center/cover no-repeat;
+    color: #263244;
     
 }
 .statistics h2{
@@ -237,6 +255,7 @@ width: 170px;
 }
 .stat {
     padding-left: 430px;
+    color: #263244;
 }
 .stat li {
     float: left;
@@ -256,6 +275,7 @@ width: 170px;
     font-size: 16px;
      margin-right: auto;
     margin-left: auto;
+    color: #263244;
 }
 .reviews h2 {
    padding-top: 110px;
@@ -271,12 +291,19 @@ width: 170px;
 }
 .client1 h4 {
     padding-top: 35px;
-    padding-bottom: 40px;
     font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+}
+.client1 h5 {
+   padding-bottom: 40px;
+    font-size: 16px; 
+    display: inline-block;
 }
 .client1 h3 {
     text-align: center;
     width: 700px;
+    line-height: 20px;
 }
 .contacts {
     text-align: center;
@@ -310,6 +337,9 @@ width: 170px;
 .geo li img {
     padding-bottom: 15px;
 }
+.geo ul {
+    height: 70px;
+}
 .contacts h4 {
     font-size: 20px;
     padding-bottom: 40px;
@@ -327,9 +357,32 @@ width: 170px;
     font-size: 16px;
     color: #182132;
 }
-.contacts input{
-   font-size: 16px; 
+.name{
+font-size: 16px; 
 color: #182132;
+width: 348px;
+height: 30px;
+background-color: #d3d6dc;
+margin-right: 30px;
+    padding-left: 10px;   
+}
+.email {
+font-size: 16px; 
+color: #182132;
+width: 348px;
+height: 30px;
+background-color: #d3d6dc; 
+    padding-left: 10px;
+  
+}
+.send {
+  width: 125px;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: solid 2px;
+    border-radius: 5px;
 }
 .map {
    width: 100%;

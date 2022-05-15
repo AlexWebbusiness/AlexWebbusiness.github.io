@@ -5,6 +5,7 @@ nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 .logo{
     color: #fff;
@@ -12,6 +13,13 @@ nav {
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease ;
+    -o-animation: comming 2s ease ;
+    animation: comming 2s ease ;
+}
+main {
+    width: 100%;
+    height: 100%;  
 }
 .menu {
     float: left;
@@ -24,10 +32,45 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
+.menu li a{
+    transition:all 0.4s;
+    color: white;
+    transform: scale(1);
+    display: block;
+}
+.menu li:nth-child(2) {
+    animation-delay: o.4s;
+}
+.menu li:nth-child(3) {
+    animation-delay: o.8s;
+}
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6) {
+    animation-delay: 2s;
+}
+.menu li a:visited{
+    color:white;
+}
+.menu li a:hover{
+    color:#d17700;
+}
+.menu li a:active{
+     transform: scale(1.1);
+}
+
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;     
 }
 .title__container{
@@ -35,6 +78,13 @@ nav {
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+     -webkit-animation: titlemove 1s ease forwards; 
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 .title__container h1 {
     font-size: 60px;
@@ -55,6 +105,47 @@ nav {
     font-size: 13px;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
+}
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift {
+    from { opacity: 0;
+        margin-top: -80px;
+        
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes titlemove{
+    from { opacity: 0;
+        margin-left: -500px;
+        
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+    
 }
 .about_me {
     max-width: 750px;
@@ -220,6 +311,11 @@ margin-left: 500px;
     margin-bottom: 50px;
     color: #263244;
     background-color: #eeeeee;
+}
+.value_ select {
+  appearance: none; 
+background: url("../img/arrow.png") no-repeat right;
+    background-position: 837px;
 }
 .zero {
     font-size: 20px;

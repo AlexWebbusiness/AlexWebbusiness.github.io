@@ -1,6 +1,220 @@
+.mask {
+    width: 100%;
+    height: 100%;
+    background: #dadde3;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cssload-loading {
+	position: absolute;
+	left: 50%;
+	width: 19px;
+	height: 19px;
+	transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+}
+.cssload-loading .cssload-dot {
+	position: absolute;
+	border-radius: 50%;
+	left: 1px;
+	top: 1px;
+	width: 18px;
+	height: 18px;
+	background: #349081;
+	animation: cssload-spin 2.88s 0s infinite both;
+		-o-animation: cssload-spin 2.88s 0s infinite both;
+		-ms-animation: cssload-spin 2.88s 0s infinite both;
+		-webkit-animation: cssload-spin 2.88s 0s infinite both;
+		-moz-animation: cssload-spin 2.88s 0s infinite both;
+}
+.cssload-loading .cssload-dot2 {
+	position: absolute;
+	border-radius: 50%;
+	width: 19px;
+	height: 19px;
+	background: #344051;
+	animation: cssload-spin2 2.88s 0s infinite both;
+		-o-animation: cssload-spin2 2.88s 0s infinite both;
+		-ms-animation: cssload-spin2 2.88s 0s infinite both;
+		-webkit-animation: cssload-spin2 2.88s 0s infinite both;
+		-moz-animation: cssload-spin2 2.88s 0s infinite both;
+}
+@keyframes cssload-spin {
+	0%, 100% {
+		box-shadow: 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	25%, 75% {
+		box-shadow: 27px 0 0 rgb(0,0,0), -27px 0 0 rgb(0,0,0), 0 27px 0 rgb(0,0,0), 0 -27px 0 rgb(0,0,0), 19px -19px 0 rgb(0,0,0), 19px 19px 0 rgb(0,0,0), -19px -19px 0 #000, -19px 19px 0 #000;
+	}
+	100% {
+		transform: rotate(360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-o-keyframes cssload-spin {
+	0%, 100% {
+		box-shadow: 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0);
+	}
+	50% {
+		-o-transform: rotate(180deg);
+	}
+	25%, 75% {
+		box-shadow: 27px 0 0 rgb(0,0,0), -27px 0 0 rgb(0,0,0), 0 27px 0 rgb(0,0,0), 0 -27px 0 rgb(0,0,0), 19px -19px 0 rgb(0,0,0), 19px 19px 0 rgb(0,0,0), -19px -19px 0 #000, -19px 19px 0 #000;
+	}
+	100% {
+		-o-transform: rotate(360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-ms-keyframes cssload-spin {
+	0%, 100% {
+		box-shadow: 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0);
+	}
+	50% {
+		-ms-transform: rotate(180deg);
+	}
+	25%, 75% {
+		box-shadow: 27px 0 0 rgb(0,0,0), -27px 0 0 rgb(0,0,0), 0 27px 0 rgb(0,0,0), 0 -27px 0 rgb(0,0,0), 19px -19px 0 rgb(0,0,0), 19px 19px 0 rgb(0,0,0), -19px -19px 0 #000, -19px 19px 0 #000;
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-webkit-keyframes cssload-spin {
+	0%, 100% {
+		box-shadow: 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	25%, 75% {
+		box-shadow: 27px 0 0 rgb(0,0,0), -27px 0 0 rgb(0,0,0), 0 27px 0 rgb(0,0,0), 0 -27px 0 rgb(0,0,0), 19px -19px 0 rgb(0,0,0), 19px 19px 0 rgb(0,0,0), -19px -19px 0 #000, -19px 19px 0 #000;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-moz-keyframes cssload-spin {
+	0%, 100% {
+		box-shadow: 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0), 0 0 0 rgb(0,0,0);
+	}
+	50% {
+		-moz-transform: rotate(180deg);
+	}
+	25%, 75% {
+		box-shadow: 27px 0 0 rgb(0,0,0), -27px 0 0 rgb(0,0,0), 0 27px 0 rgb(0,0,0), 0 -27px 0 rgb(0,0,0), 19px -19px 0 rgb(0,0,0), 19px 19px 0 rgb(0,0,0), -19px -19px 0 #000, -19px 19px 0 #000;
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@keyframes cssload-spin2 {
+	0%, 100% {
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+	25%, 75% {
+		box-shadow: 51px 0 0 #000, -51px 0 0 #000, 0 51px 0 #000, 0 -51px 0 #000, 37px -37px 0 #000, 37px 37px 0 #000, -37px -37px 0 #000, -37px 37px 0 #000;
+		background: transparent;
+	}
+	100% {
+		transform: rotate(-360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-o-keyframes cssload-spin2 {
+	0%, 100% {
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+	50% {
+		-o-transform: rotate(-180deg);
+	}
+	25%, 75% {
+		box-shadow: 51px 0 0 #000, -51px 0 0 #000, 0 51px 0 #000, 0 -51px 0 #000, 37px -37px 0 #000, 37px 37px 0 #000, -37px -37px 0 #000, -37px 37px 0 #000;
+		background: transparent;
+	}
+	100% {
+		-o-transform: rotate(-360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-ms-keyframes cssload-spin2 {
+	0%, 100% {
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+	50% {
+		-ms-transform: rotate(-180deg);
+	}
+	25%, 75% {
+		box-shadow: 51px 0 0 #000, -51px 0 0 #000, 0 51px 0 #000, 0 -51px 0 #000, 37px -37px 0 #000, 37px 37px 0 #000, -37px -37px 0 #000, -37px 37px 0 #000;
+		background: transparent;
+	}
+	100% {
+		-ms-transform: rotate(-360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-webkit-keyframes cssload-spin2 {
+	0%, 100% {
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+	50% {
+		-webkit-transform: rotate(-180deg);
+	}
+	25%, 75% {
+		box-shadow: 51px 0 0 #000, -51px 0 0 #000, 0 51px 0 #000, 0 -51px 0 #000, 37px -37px 0 #000, 37px 37px 0 #000, -37px -37px 0 #000, -37px 37px 0 #000;
+		background: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
+
+@-moz-keyframes cssload-spin2 {
+	0%, 100% {
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+	50% {
+		-moz-transform: rotate(-180deg);
+	}
+	25%, 75% {
+		box-shadow: 51px 0 0 #000, -51px 0 0 #000, 0 51px 0 #000, 0 -51px 0 #000, 37px -37px 0 #000, 37px 37px 0 #000, -37px -37px 0 #000, -37px 37px 0 #000;
+		background: transparent;
+	}
+	100% {
+		-moz-transform: rotate(-360deg);
+		box-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000;
+	}
+}
 body {
     font-family: arial, sans-serif;
 }
+
 nav {
     width: 100%;
     height: 60px;
@@ -44,10 +258,10 @@ main {
     display: block;
 }
 .menu li:nth-child(2) {
-    animation-delay: o.4s;
+    animation-delay: 0.4s;
 }
 .menu li:nth-child(3) {
-    animation-delay: o.8s;
+    animation-delay: 0.8s;
 }
 .menu li:nth-child(4) {
     animation-delay: 1.2s;
@@ -145,11 +359,8 @@ main {
         margin-left: 404px;
     }
 }
-    
-}
 .about_me {
     max-width: 750px;
-    text-align: center;
     height: 720px;
     font-size: 17px;
     margin-top: 110px;
@@ -157,6 +368,7 @@ main {
     margin-left: auto;
     background: url(../img/bg2.png) center/cover no-repeat;
     color: #787f8b;
+    text-align: center;
 }
 .text {
     text-align: left;
@@ -164,12 +376,20 @@ main {
 .about_me h2 {
        font-size: 33px;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
     color: #263244;
 }
 .about_me img {
     text-align: center;
     margin:35px;
+}
+.about_me img {
+transition:  all  0.3s;
+    transform: scale(1);  
+}
+.about_me img:hover {
+    transform: scale(1.3);
 }
 .about_me input {
    height: 40px;
@@ -182,20 +402,31 @@ main {
     padding: 0px 16px;
     margin: 50px 14px 0px 14px; 
     background: url(../img/icon.png) 10px 10px no-repeat;
-    
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.about_me input:hover{
+    transform: scale(1.02);
+}
+.about_me input:active{
+    transform: scale(1.02);
 }
 .what_can_i_do {
     width: 100%;
     height: 530px;
     background: url(../img/bg3.png) center/cover no-repeat;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     text-align: center;
     padding-top: 110px;
   }
 .can_do {
 float: left;
     padding-left: 480px;
-  
-}
+ }
 .what_can_i_do h2 {
     font-size: 33px;
     font-weight: bold;
@@ -212,7 +443,10 @@ float: left;
     max-width: 210px;
     padding-top: 100px;
     line-height: 20px;
-    
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 .what_can_i_do h4{
     color: #cf7600;
@@ -263,6 +497,17 @@ float: left;
     height: 45px;
     font-size: 19px;
     margin-top: 25px;
+}
+.client input:hover{
+    background: #4c8a85;
+    color: white;
+}
+.client input:active{
+    background: #4c8a85;
+    color: white;
+    transform: scale(1.03);
+    transition: 0.2s; 
+    
 }
 .project_name {
    padding-left: 670px;
@@ -362,6 +607,10 @@ background: url("../img/arrow.png") no-repeat right;
 }
 .stat li img{
     padding-bottom: 40px;
+}
+.stat img:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
 }
 .reviews {
     max-width: 700px;
@@ -478,6 +727,17 @@ background-color: #d3d6dc;
     background: none;
     border: solid 2px;
     border-radius: 5px;
+}
+.contacts input:hover {
+    background: #1b273a ;
+    color: ;
+    
+    
+}
+.contacts input:active {
+    background: #1b273a;
+      transform: scale(1.03);
+    transition: 0.2s;
 }
 .map {
    width: 100%;
